@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"><strong>My Portfolio</strong></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="darkModeToggle">Dark Mode</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about">
+  <img src="./profile.jpg" alt="Your Name" class="profile-pic" />
+  <h1>Hi, I'm Dhanush</h1>
+  <p>Web Developer | Designer | Coder</p>
+  <p>I'm a web developer passionate about creating beautiful, functional websites and applications...</p>
+</section>
+
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>IoT Based Waste Management System</h3>
+          <p>The overflow of garbage in public areas creates the unhygienic condition in the nearby surrounding. It may provoke several serious diseases amongst the nearby people. It also degrades the valuation of the area.</p>
+          <a href="https://github.com/Dhanush1972/Smart-dustbin" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>An Approach Towards Cyber Attacks Detection And Prevention System Through Optimized Stacked Recurrent Neural Network</h3>
+          <p>The concept is to fetch the data that is cyberattacked while implementing it in IoT devices or embedded devices using a mechanism called RNN.</p>
+          <a href="https://github.com/Dhanush1972/Final-Year-Project" target="_blank">View Project</a>
+        </div>
+         <div class="project-card">
+          <h3>Banking Application</h3>
+          <p>We developed a bank application that allows for the creation, addition, and retrieval of account details, as well as the execution of transactions and loan acquisitions through the use of Spring Boot.</p>
+          <a href="https://github.com/Dhanush1972/Bank_Application" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

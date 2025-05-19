@@ -1,0 +1,128 @@
+/* Basic reset and fonts */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f0f0f5;
+  color: #333;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s, color 0.3s;
+}
+header {
+  background: #222;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: bold;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+section {
+  margin-bottom: 3rem;
+}
+h1, h2 {
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+p {
+  line-height: 1.5;
+}
+/* Projects grid */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.project-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card h3 {
+  margin-top: 0;
+}
+/* Contact form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+input, textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #444;
+}
+/* Dark mode */
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+body.dark header {
+  background: #000;
+}
+body.dark .project-card {
+  background: #1f1f1f;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+body.dark input, body.dark textarea {
+  background-color: #222;
+  border-color: #555;
+  color: #eee;
+}
+/* Dark mode button */
+#darkModeToggle {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 0.3rem 0.7rem;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* makes it a circle */
+  object-fit: fill;  /* crop the image nicely */
+  display: block;
+  margin: 1rem 0;
+  border: 3px solid white;
+}
